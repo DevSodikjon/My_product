@@ -1,0 +1,151 @@
+#process {
+    background-color: $bg_color;
+    background-image: url("../img/Bg_1.png");
+    background-size: cover;
+
+    .process_items {
+        padding-top: 170px;
+        padding-bottom: 100px;
+        color: $white;
+
+        .process_items_title {
+            width: 50%;
+            margin: 0 auto;
+
+            h3 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px;
+                text-align: center;
+            }
+
+            p {
+                margin-top: 16px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+            }
+        }
+
+        .process_items_comment_one {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-around;
+            .one_person {
+                display: flex;
+                gap: 16px;
+                position: relative;
+                .comment {
+                    width: 274px;
+                    height: 53px;
+                    margin-top: 16px;
+                    background-color: $white;
+                    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+                    border-radius: 26.5px;
+
+                    p {
+                        
+                        text-align: center;
+                        padding: 15px 0px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #2F281E;
+                    }
+                }
+
+                .round{
+                    width:17px;
+                    height: 17px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 58px;
+                    left: 154px;
+                    background-color: $white;
+                }
+
+                .smallround{
+                    width: 9px;
+                    height: 9px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 76px;
+                    left: 142px;
+                }
+            }
+
+            .second_person{
+                display: flex;
+                gap: 25px;
+                flex-direction: row-reverse;
+                position: relative;
+
+                .comment{
+                    width: 274px;
+                    height: 53px;
+                    margin-top: 16px;
+                    background-color: $white;
+                    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+                    border-radius: 26.5px;
+
+                    p{
+                        text-align: center;
+                        padding: 15px 0px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #2F281E;
+                    }
+
+                    
+                }
+                .round{
+                    position: absolute;
+                    width:17px;
+                    height: 17px;
+                    top: 58px;
+                    left: 200px;
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+
+                .smallround{
+                    width: 9px;
+                    height: 9px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 77px;
+                    right: 172px;
+                }
+            }
+
+            
+
+        }
+        
+        .odd{
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .process_items_btn{
+            width: 100%;
+            margin-top: 63px;
+            text-align: center;
+            button{
+                @include button_header;
+                padding: 15px 31px;
+                background-color: $light_green;
+                border: none;
+            }
+
+            button:hover{
+                @include hover;
+            }
+        }
+    }
+}

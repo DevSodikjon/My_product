@@ -1,0 +1,61 @@
+#customers {
+    background-color: $bg_color;
+
+    .customers_items {
+        padding-top: 169px;
+        color: $white;
+        padding-bottom: 31px;
+        &_cards {
+            .card {
+                display: flex;
+                justify-content: space-between;
+                
+                .card_content {
+                    width: 43%;
+
+                    .first {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 8px;
+                    }
+
+                    .second {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 26px;
+                        margin-top: 30px;
+                        margin-bottom: 12px;
+                    }
+
+                    .third {
+                        margin-top: 25px;
+                        margin-bottom: 12px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+
+                    h3 {
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 48px;
+                        margin-bottom: 23px;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+
+            .card_odd{
+                display:flex ;
+                flex-direction: row-reverse;
+                padding: 186px 0px;
+            }
+        }
+    }
+}

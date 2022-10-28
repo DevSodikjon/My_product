@@ -1,0 +1,64 @@
+#product {
+    background-image: url("../img/Bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top 96% left 0;
+    background-color: $bg_color;
+
+    .product_items {
+        color: $white;
+
+        &_title {
+            width: 45%;
+            margin: 0 auto;
+
+            h3 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px;
+                text-align: center;
+            }
+        }
+
+        &_cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 66px;
+            .card {
+                width: 20%;
+                &_content {
+                    margin-top: 30px;
+                    h4 {
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 33px;
+                    }
+
+                    p {
+                        margin-top: 13px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+
+        .products_items_btn{
+            text-align: center;
+            margin-top: 60px;
+            padding-bottom:90px ;
+            .sign_up_now{
+                @include button_header;
+                background-color: 
+                $light_green;
+                border: none;
+                padding: 15px 32px;
+            }
+
+            .sign_up_now:hover{
+                @include hover;
+            }
+        }
+    }
+}

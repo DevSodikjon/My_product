@@ -1,0 +1,154 @@
+.header_hero {
+    background-color: $bg_color;
+
+    header {
+        .header_items {
+            @include display_align_justfy;
+            padding: 23px 0px 29px 0px;
+
+            &_logo {
+                display: flex;
+                gap: 16px;
+
+                // h1 {
+                //     font-weight: 800;
+                //     font-size: 30px;
+                //     line-height: 28px;
+                //     color: $white;
+                // }
+            }
+
+            &_navigationbar {
+                @include display_align;
+                gap: 24px;
+
+                nav {
+                    ul {
+                        @include display_align;
+                        gap: 24px;
+                        list-style: none;
+
+                        li {
+                            a {
+                                text-decoration: none;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    a:hover {
+                        transition: all 0.7s ease;
+                        color: $light_green;
+                    }
+                }
+
+
+
+                .signin {
+                    @include button_header;
+                    background-color: transparent;
+                    border: 2px solid $white;
+                    padding: 10px 23px;
+                }
+
+                .signin:hover {
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                    background-color: $light_green;
+                    border: 2px solid $bg_color;
+                    color: $bg_color;
+                }
+
+                .signup {
+                    @include button_header;
+                    background-color: 
+                    transparent;
+                    padding: 10px 23px;
+                    border: 2px solid $light_green;
+                    background-color: $light_green;
+
+                }
+
+                .signup:hover {
+                    @include hover;
+                }
+            }
+
+        }
+    }
+
+    #hero {
+        .hero_items {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 100px;
+
+            &_content {
+                width: 40%;
+                color: $white;
+                margin-top: 132px;
+
+                h2 {
+                    width: 90%;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+
+                p {
+                    margin-top: 18px;
+                    margin-bottom: 45px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                &_btn {
+                    @include display_align;
+                    gap: 30px;
+
+                    .get_started {
+                        @include button_header;
+                        padding: 15px 41px;
+                        background-color: $light_green;
+                        border: none;
+                    }
+
+                    .get_started:hover {
+
+                        @include hover;
+
+                    }
+
+                    .video {
+                        @include display_align;
+                        gap: 8px;
+
+                        i {
+                            font-size: 25px;
+                            color: $light_green;
+                        }
+
+                        a {
+                            color: $light_green;
+                        }
+
+                        a:hover{
+                            color: $white;
+                        }
+
+                        p:hover {
+                            cursor: pointer;
+                            color: $white;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
