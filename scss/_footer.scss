@@ -1,0 +1,189 @@
+footer {
+    background-color: $bg_color;
+
+    .footer_items {
+
+        .footer_content {
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            
+            .footer_logo {
+                width: 16%;
+                
+                .social {
+                    display: flex;
+                    gap: 16px;
+                    
+           
+                    .instagram {
+                        margin-top: 28px;
+                        width: 40px;
+                        height: 40px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        @include display_align_justfy_center;
+                        
+                        color: $light_green;
+                    
+                    }
+
+                    .instagram:hover{
+                        transition: all 0.7s ease-in-out;
+                        background-color: $light_green;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .resources {
+                color: $white;
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 35px;
+                            color: $white;
+
+                        }
+                        a:hover{
+                            transition: color 0.5s ease;
+                            color: $light_green;
+                        }
+                    }
+                }
+            }
+
+            .stuff {
+                h4 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $white;
+                    margin-bottom: 8px;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        padding-bottom: 8px;
+
+                        a {
+                            text-decoration: none;
+                            color: $white;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+
+                        a:hover{
+                            transition: color 0.5s ease;
+                            color: $light_green;
+                        }
+                    }
+                }
+            }
+
+            form {
+                width: 23%;
+
+                p {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $white;
+                    margin-bottom: 34px;
+                }
+
+                input {
+                    width: 325px;
+                    height: 48px;
+                    border-radius: 4px;
+                    margin-bottom: 29px;
+                    padding-left: 10px;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $bg_color;
+
+
+                }
+
+                button {
+                    padding: 8px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    background-color: $light_green;
+                    color: $white;
+                }
+
+                button:hover{
+                    @include hover;    
+                }
+            }
+        }
+
+        .desc{
+            text-align: center;
+            margin-top: 10px;
+            color: $white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            padding-bottom: 24px;
+        }
+
+    }
+}
+
+@media screen and (max-width:$phone) {
+    .footer_items{
+        .footer_content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100% !important;
+            
+            .footer_logo{
+                width: 35% !important;
+                text-align: center;
+            }
+
+            .resources{
+                margin-top: 32px;
+                text-align: center;
+            }
+
+            .stuff{
+                margin-top: 32px;
+                text-align: center;
+            }
+
+            form{
+                margin-top: 32px;
+                text-align: center;
+                width: 57% !important;
+
+                input{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

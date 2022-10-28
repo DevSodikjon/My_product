@@ -105,21 +105,35 @@
 
             }
 
-            // .card:hover{
-            //     transition: all 1s ease;
-            //     background-color: $light_green;
-            //     color: $white;
+            .card:hover{
+                transition: all 1s ease;
+                background-color: $light_green;
+                color: $white;
                 
-            //     p{
-            //         color: $white;
-            //     }
+                p{
+                    color: $white;
+                }
 
-            //     .price_items_btn{
-            //         background-color: $white;
-            //         color: $light_green;
-            //     }
+                .price_items_btn{
+                    background-color: $white;
+                    color: $light_green;
+                }
 
-            // }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    .price_items{
+        .price_items_cards{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .card{
+                margin: 0 auto;
+
+            }
         }
     }
 }

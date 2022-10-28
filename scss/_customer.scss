@@ -5,11 +5,12 @@
         padding-top: 169px;
         color: $white;
         padding-bottom: 31px;
+
         &_cards {
             .card {
                 display: flex;
-                justify-content: space-between;
-                
+                justify-content: space-between !important;
+
                 .card_content {
                     width: 43%;
 
@@ -49,12 +50,78 @@
                         line-height: 26px;
                     }
                 }
+
             }
 
-            .card_odd{
-                display:flex ;
+            .card_odd {
+                display: flex;
                 flex-direction: row-reverse;
                 padding: 186px 0px;
+
+                .card_content {
+                    .icons {
+                        width: 100%;
+                        margin-top: 30px;
+                        .box {
+                            @include display_align_justfy;
+                            gap: 30px;
+                            margin-top: 30px;
+                            .back {
+                                width: 35px;
+                                height: 35px;
+                                background: #F03E3D;
+                                border-radius: 13.8542px;
+                                @include display_align_justfy_center;
+                                i{
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+
+                        .yellow{
+                            .back{
+                                background: #FF9900;
+                            }
+                        }
+
+                        .air{
+                            .back{
+                                background-color: $air_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    #customers {
+        .customers_items {
+            width: 100%;
+            .customers_items_cards {
+                width: 100%;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    .card_content {
+                        width: 100%;
+
+                    }
+
+                    .card_img {
+                        margin-top: 20px;
+                        width: 100% !important;;
+
+                        img{
+                            width: 95%;
+                        }
+                    }
+                }
             }
         }
     }

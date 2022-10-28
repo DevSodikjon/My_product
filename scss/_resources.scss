@@ -117,3 +117,33 @@
         }
     }
 }
+
+@media screen and (max-width:$phone) {
+    .resources_items{
+        .resources_items_title{
+            width: 74%;
+
+            br{
+                display: none;
+            }
+        }
+
+        .resources_items_cards{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .resources_items_notion{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+
+            .notion_content{
+                text-align: center;
+                width: 72%;
+                margin: 0 auto ;
+            }
+        }
+    }
+}

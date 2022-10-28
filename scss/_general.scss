@@ -18,5 +18,9 @@ html{
 }
 
 @media screen and (max-width:$phone) {
-    
+    .container{
+        max-width: 576px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
 }

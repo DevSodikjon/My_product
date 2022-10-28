@@ -151,3 +151,42 @@
         }
     }
 }
+
+@media screen and (max-width:$phone) {
+    .process_items{
+        .process_items_title{
+            width: 100% !important;
+            p{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .process_items_comment_one{
+            display: flex;
+            flex-direction: column;
+            .round{
+                display: none;
+
+            }
+
+            .smallround{
+                display: none;
+            }
+        }
+
+        .odd{
+            display: flex;
+            flex-direction: column-reverse;
+
+            .round{
+                display: none;
+
+            }
+
+            .smallround{
+                display: none;
+            }
+        }
+    }
+}

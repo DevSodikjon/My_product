@@ -82,3 +82,29 @@
         }
     }
 }
+
+@media screen and (max-width:$phone) {
+
+    .strategy_items{
+        .strategy_items_title{
+            width: 100%;
+            text-align: center;
+
+            p{
+                width: 72%;
+                margin: 0 auto;
+            }
+        }
+
+        .strategy_items_cards{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .dods{
+            display: none !important;
+        }
+    }
+    
+}

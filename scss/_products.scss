@@ -62,3 +62,27 @@
         }
     }
 }
+
+@media screen and (max-width:$phone) {
+    #product{
+        .product_items{
+            .product_items_title{
+                width: 80% !important;
+                margin-bottom: 50px;
+            }
+
+            .product_items_cards{
+                display: flex;
+                flex-direction: column;
+              
+                
+                .card{
+                    width: 45%;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
