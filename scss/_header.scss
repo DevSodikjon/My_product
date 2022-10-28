@@ -292,6 +292,13 @@
                         width: 71% !important;
                         margin:16px auto;
                     }
+
+
+                    .hero_items_content_btn{
+                        .video{
+                            width: 100%;
+                        }
+                    }
                 }
 
                 .hero_items_img{
@@ -300,6 +307,15 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:300px) {
+    .hero_items_content_btn{
+        display: flex;
+        flex-direction: column;
+        .video{
         }
     }
 }

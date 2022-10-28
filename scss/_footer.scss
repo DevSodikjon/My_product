@@ -187,3 +187,16 @@ footer {
         }
     }
 }
+
+
+@media screen and (max-width:300px) {
+    footer{
+        .footer_items{
+            .footer_logo{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

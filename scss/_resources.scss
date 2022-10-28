@@ -144,6 +144,36 @@
                 width: 72%;
                 margin: 0 auto ;
             }
+
+            .notion_img{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:300px) {
+    .resources_items{
+        width: 100%;
+        .resources_items_cards{
+            width: 100%;
+            .card{
+                width: 100% !important;
+            }
+        }
+
+        .resources_items_notion{
+            width: 100%;
+            text-align: center;
+            .notion_content{
+                p{
+                    text-align: center;
+                    margin: 0 auto;
+                    font-size: 16px !important;
+                }
+            }
         }
     }
 }

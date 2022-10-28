@@ -272,8 +272,17 @@ html {
     width: 71% !important;
     margin: 16px auto;
   }
+  .header_hero #hero .hero_items_content .hero_items_content_btn .video {
+    width: 100%;
+  }
   .header_hero #hero .hero_items .hero_items_img img {
     margin-top: 54px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hero_items_content_btn {
+    display: flex;
+    flex-direction: column;
   }
 }
 #product {
@@ -459,6 +468,11 @@ html {
   }
   #customers .customers_items .customers_items_cards .card .card_img img {
     width: 95%;
+  }
+}
+@media screen and (max-width: 300pxc) {
+  .card {
+    width: 100%;
   }
 }
 #process {
@@ -721,6 +735,17 @@ html {
     display: none !important;
   }
 }
+@media screen and (max-width: 300px) {
+  .strategy_items .strategy_items_cards {
+    width: 100% !important;
+  }
+  .strategy_items .strategy_items_cards .card {
+    width: 100% !important;
+  }
+  .strategy_items .strategy_items_cards .card img {
+    width: 100% !important;
+  }
+}
 #price {
   background-color: #1F2E35;
 }
@@ -842,6 +867,11 @@ html {
   }
   .price_items .price_items_cards .card {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  #price .price_items .price_items_cards .card {
+    width: 100%;
   }
 }
 #resources {
@@ -971,6 +1001,29 @@ html {
     text-align: center;
     width: 72%;
     margin: 0 auto;
+  }
+  .resources_items .resources_items_notion .notion_img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .resources_items {
+    width: 100%;
+  }
+  .resources_items .resources_items_cards {
+    width: 100%;
+  }
+  .resources_items .resources_items_cards .card {
+    width: 100% !important;
+  }
+  .resources_items .resources_items_notion {
+    width: 100%;
+    text-align: center;
+  }
+  .resources_items .resources_items_notion .notion_content p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px !important;
   }
 }
 footer {
@@ -1123,6 +1176,11 @@ footer .footer_items .desc {
   }
   .footer_items .footer_content form input {
     width: 100% !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  footer .footer_items .footer_logo img {
+    width: 100%;
   }
 }
 

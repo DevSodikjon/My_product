@@ -137,3 +137,15 @@
         }
     }
 }
+
+@media screen and (max-width:300px) {
+    #price{
+        .price_items{
+            .price_items_cards{
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

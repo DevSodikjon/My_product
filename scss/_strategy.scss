@@ -108,3 +108,18 @@
     }
     
 }
+
+@media screen and (max-width:300px) {
+    .strategy_items{
+        .strategy_items_cards{
+            width: 100% !important;
+            .card{
+                width: 100% !important;
+                img{
+                    width: 100% !important;
+                }
+            }
+
+        }
+    }
+}
