@@ -27,6 +27,86 @@ html {
   background-color: #1F2E35;
   position: relative;
 }
+.header_hero header .mobile_nav {
+  position: absolute;
+  background-color: #02897A;
+  width: 100%;
+  top: -500px;
+  left: 0;
+}
+.header_hero header .mobile_nav .close {
+  margin-top: 50px !important;
+  display: flex;
+  justify-content: end;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.header_hero header .mobile_nav .close:hover {
+  transition: all 1s ease;
+  cursor: pointer;
+  color: #22343D;
+}
+.header_hero header .mobile_nav nav {
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.header_hero header .mobile_nav nav ul {
+  list-style: none;
+}
+.header_hero header .mobile_nav nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header_hero header .mobile_nav nav ul li a:hover {
+  transition: all 0.7s ease;
+  color: #1F2E35;
+}
+.header_hero header .mobile_nav .signin {
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 50px;
+  background-color: transparent;
+  padding: 10px 23px;
+  border: 2px solid #FFFFFF;
+  margin: 0 auto;
+}
+.header_hero header .mobile_nav .signin:hover {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: #02897A;
+  border: 2px solid #1F2E35;
+  color: #1F2E35;
+}
+.header_hero header .mobile_nav .signup {
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  padding: 10px 23px;
+  background-color: #FFFFFF;
+  color: #1F2E35;
+}
+.header_hero header .mobile_nav .signup:hover {
+  transition: all 1s ease;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #02897A;
+  border: none;
+  background-color: #22343D;
+}
+.header_hero header .active {
+  transition: all 0.7s ease-in-out;
+  top: 0px;
+}
 .header_hero header .header_items {
   display: flex;
   align-items: center;
@@ -165,18 +245,6 @@ html {
 }
 
 @media screen and (max-width: 576px) {
-  .header_hero header .mobile_nav {
-    position: absolute;
-    background-color: #02897A;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-  .header_hero header .mobile_nav .colse {
-    margin-top: 120px;
-    display: flex;
-    justify-content: end;
-  }
   .header_hero header .header_items_navigationbar {
     display: none !important;
   }
