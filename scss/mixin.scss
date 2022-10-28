@@ -29,4 +29,10 @@
     background-color: $white;
     color: $light_green;
 }
+@mixin hoverWhite{
+    transition: all 1s ease;
+    cursor: pointer;
+    background-color: $bg_color;
+    color: $white;
+}
 

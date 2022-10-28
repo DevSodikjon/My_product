@@ -1,0 +1,119 @@
+#resources {
+    background-color: $bg_color;
+
+    .resources_items {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        .resources_items_title {
+            margin: 0 auto;
+            color: $white;
+            text-align: center;
+
+            h3 {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+            }
+
+            p {
+                margin-top: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+                letter-spacing: 0.2px;
+            }
+        }
+
+        .resources_items_cards {
+            margin-top: 50px;
+            margin-bottom: 150px;
+            @include display_align_justfy;
+
+            .card {
+                width: 327px;
+                border-radius: 5px;
+                background-color: $white;
+                padding: 28px 0px 0px 28px;
+
+                i {
+                    color: #F3CD03;
+                    margin-bottom: 20px;
+                }
+
+                .desc {
+                    margin-top: 16px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    color: #737373;
+                }
+
+                .profil {
+                    margin-top: 16px;
+                    margin-bottom: 17px;
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+
+                    img {
+                        width: 50px;
+                    }
+
+                    .about {
+                        h4 {
+                            color: $light_green;
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 24px;
+                            letter-spacing: 0.2px;
+                            color: #252B42;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .resources_items_notion {   
+            width: 968px;
+            margin: 0 auto;
+            border-radius: 32px;
+            background-color: $light_green;
+            display: flex;
+
+            .notion_content {
+                padding: 49px 0px 0px 51px;
+                color: $white;
+
+                p {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 151.4%;
+                }
+
+                .get_this{
+                    @include button_header;
+                    margin-top: 90px;
+                    border-radius: 8px;
+                    border: none;
+                    color: $light_green;
+                    padding: 13px 35px 7px 33px;
+                }
+
+                .get_this:hover{
+                    transition: all 1s ease;
+                    cursor: pointer;
+                    background-color: $bg_color;
+                    color: $light_green;
+                }
+            }
+        }
+    }
+}

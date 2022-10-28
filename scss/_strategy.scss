@@ -1,0 +1,84 @@
+#strategy {
+    background-color: $bg_color;
+
+    .strategy_items {
+        padding-top: 50px;
+
+        .strategy_items_title {
+            color: $white;
+
+            h3 {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 51px;
+            }
+
+            p {
+                padding: 8px 0px 33px 0px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        .strategy_items_cards {
+            @include display_align_justfy;
+            padding-bottom: 64px;
+            .card {
+                width: 349px;
+                border-radius: 8px;
+                background-color: $white;
+
+
+                .img3{
+                    border-top-left-radius: 2%;
+                    border-top-right-radius: 2%;
+                }
+
+                .card_content {
+                    padding: 24px 30px 40px 24px;
+
+                    .title {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: #22343D;
+
+                        span {
+                            font-weight: 700;
+                            color: black;
+                        }
+                    }
+
+                    .other{
+                        color: $light_green;
+                    }
+
+                    p {
+                        margin-top: 12px;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 40px;
+                        color: #22343D;
+                    }
+                }
+            }
+        }
+
+        .dods{
+            @include display_align_justfy_center;
+            gap: 10px;
+            padding-bottom: 27px;
+            .round{
+                width: 16px;
+                height: 16px;
+                background-color: $white;
+                border-radius: 50%;
+            }
+
+            .green{
+                background-color: $light_green;
+            }
+        }
+    }
+}

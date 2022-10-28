@@ -6,6 +6,10 @@
   font-family: poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -264,7 +268,8 @@
 #process {
   background-color: #1F2E35;
   background-image: url("../img/Bg_1.png");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 #process .process_items {
   padding-top: 170px;
@@ -395,6 +400,288 @@
   transition: all 1s ease;
   cursor: pointer;
   background-color: #FFFFFF;
+  color: #02897A;
+}
+
+#strategy {
+  background-color: #1F2E35;
+}
+#strategy .strategy_items {
+  padding-top: 50px;
+}
+#strategy .strategy_items .strategy_items_title {
+  color: #FFFFFF;
+}
+#strategy .strategy_items .strategy_items_title h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+#strategy .strategy_items .strategy_items_title p {
+  padding: 8px 0px 33px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+#strategy .strategy_items .strategy_items_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 64px;
+}
+#strategy .strategy_items .strategy_items_cards .card {
+  width: 349px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+#strategy .strategy_items .strategy_items_cards .card .img3 {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+#strategy .strategy_items .strategy_items_cards .card .card_content {
+  padding: 24px 30px 40px 24px;
+}
+#strategy .strategy_items .strategy_items_cards .card .card_content .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #22343D;
+}
+#strategy .strategy_items .strategy_items_cards .card .card_content .title span {
+  font-weight: 700;
+  color: black;
+}
+#strategy .strategy_items .strategy_items_cards .card .card_content .other {
+  color: #02897A;
+}
+#strategy .strategy_items .strategy_items_cards .card .card_content p {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343D;
+}
+#strategy .strategy_items .dods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 27px;
+}
+#strategy .strategy_items .dods .round {
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+#strategy .strategy_items .dods .green {
+  background-color: #02897A;
+}
+
+#price {
+  background-color: #1F2E35;
+}
+#price .price_items {
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+#price .price_items .price_items_title {
+  color: #FFFFFF;
+  text-align: center;
+}
+#price .price_items .price_items_title h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+#price .price_items .price_items_title p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+#price .price_items .price_items_cards {
+  margin-top: 173px;
+  display: flex;
+  justify-content: space-between;
+}
+#price .price_items .price_items_cards .card {
+  width: 322px;
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 24px 0px 0px 0px;
+  border-radius: 8px;
+}
+#price .price_items .price_items_cards .card .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343D;
+}
+#price .price_items .price_items_cards .card .desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #22343D;
+}
+#price .price_items .price_items_cards .card p {
+  padding-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #22343D;
+}
+#price .price_items .price_items_cards .card .price_items_btn {
+  margin-top: 38px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 11px 19px;
+  border: none;
+  background-color: #02897A;
+}
+#price .price_items .price_items_cards .card .price_items_btn:hover {
+  transition: all 1s ease;
+  cursor: pointer;
+  background-color: #1F2E35;
+  color: #FFFFFF;
+}
+#price .price_items .price_items_cards .card .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#price .price_items .price_items_cards .card .num p {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #02897A;
+}
+#price .price_items .price_items_cards .card .num .month .dollor {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+}
+#price .price_items .price_items_cards .card .num .month .exp {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #AFAFAF;
+}
+
+#resources {
+  background-color: #1F2E35;
+}
+#resources .resources_items {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#resources .resources_items .resources_items_title {
+  margin: 0 auto;
+  color: #FFFFFF;
+  text-align: center;
+}
+#resources .resources_items .resources_items_title h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+#resources .resources_items .resources_items_title p {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+#resources .resources_items .resources_items_cards {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#resources .resources_items .resources_items_cards .card {
+  width: 327px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 28px 0px 0px 28px;
+}
+#resources .resources_items .resources_items_cards .card i {
+  color: #F3CD03;
+  margin-bottom: 20px;
+}
+#resources .resources_items .resources_items_cards .card .desc {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+#resources .resources_items .resources_items_cards .card .profil {
+  margin-top: 16px;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+#resources .resources_items .resources_items_cards .card .profil img {
+  width: 50px;
+}
+#resources .resources_items .resources_items_cards .card .profil .about h4 {
+  color: #02897A;
+}
+#resources .resources_items .resources_items_cards .card .profil .about p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+#resources .resources_items .resources_items_notion {
+  width: 968px;
+  margin: 0 auto;
+  border-radius: 32px;
+  background-color: #02897A;
+  display: flex;
+}
+#resources .resources_items .resources_items_notion .notion_content {
+  padding: 49px 0px 0px 51px;
+  color: #FFFFFF;
+}
+#resources .resources_items .resources_items_notion .notion_content p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 151.4%;
+}
+#resources .resources_items .resources_items_notion .notion_content .get_this {
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 90px;
+  border-radius: 8px;
+  border: none;
+  color: #02897A;
+  padding: 13px 35px 7px 33px;
+}
+#resources .resources_items .resources_items_notion .notion_content .get_this:hover {
+  transition: all 1s ease;
+  cursor: pointer;
+  background-color: #1F2E35;
   color: #02897A;
 }
 

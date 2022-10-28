@@ -1,7 +1,9 @@
 #process {
     background-color: $bg_color;
     background-image: url("../img/Bg_1.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 
     .process_items {
         padding-top: 170px;

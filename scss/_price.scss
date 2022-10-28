@@ -1,0 +1,125 @@
+#price {
+    background-color: $bg_color;
+
+    .price_items {
+        padding-top: 10px;
+        padding-bottom: 100px;
+        .price_items_title {
+            color: $white;
+            text-align: center;
+
+            h3 {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 51px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        .price_items_cards {
+            margin-top: 173px;
+            display: flex;
+            justify-content: space-between;
+            .card {
+                width: 322px;
+                text-align: center;
+                background-color: $white;
+                padding: 24px 0px 0px 0px;
+                border-radius: 8px;
+
+                .title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 40px;
+                    color: #22343D;
+                }
+
+                .desc {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 40px;
+                    color: #22343D;
+                }
+
+                p {
+                    padding-top: 16px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.2px;
+                    color: #22343D;
+                }
+
+                .price_items_btn{
+                    margin-top: 38px;
+                    margin-bottom: 32px;
+                    @include button_header;
+                    padding: 11px 19px;
+                    border: none;
+                    background-color: $light_green;
+                }
+
+                .price_items_btn:hover{
+                    @include hoverWhite;
+
+                }
+
+                .num {
+                    @include display_align_justfy_center;
+                    gap: 8px;
+
+                    p {
+                        font-weight: 700;
+                        font-size: 76px;
+                        line-height: 100px;
+                        text-align: center;
+                        letter-spacing: 0.2px;
+                        color: $light_green;
+                    }
+
+                    .month {
+                        .dollor {
+                            display: flex;
+                            justify-content: flex-start;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 30px;
+                            letter-spacing: 0.1px;
+                        }
+
+                        .exp {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 0.1px;
+                            color: #AFAFAF;
+                        }
+                    }
+                }
+
+
+            }
+
+            // .card:hover{
+            //     transition: all 1s ease;
+            //     background-color: $light_green;
+            //     color: $white;
+                
+            //     p{
+            //         color: $white;
+            //     }
+
+            //     .price_items_btn{
+            //         background-color: $white;
+            //         color: $light_green;
+            //     }
+
+            // }
+        }
+    }
+}
